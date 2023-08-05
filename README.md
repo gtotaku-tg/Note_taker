@@ -16,4 +16,4 @@ npm start
 ```
 
 ## Deployed HEROKU APP
-[View deployed HEROKU app here!]( )
+[View deployed HEROKU app here!](https://still-brushlands-70931-a998308348a5.herokuapp.com/ )
