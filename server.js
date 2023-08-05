@@ -3,7 +3,7 @@ const app = express();
 const apiRoutes = require('./routes/apiRoutes');
 const htmlRoutes = require('./routes/htmlRoutes');
 
-const PORT = process.env.PORT || 3001;
+const port = process.env.PORT || 3001;
 
 //set up express to handle data parsing 
 app.use(express.json());
@@ -15,6 +15,6 @@ app.use(apiRoutes);
 app.use(htmlRoutes);
   
 
-app.listen(PORT, () => {
-    console.log(`API server now on port http://localhost:${PORT}`);
+app.listen(port, () => {
+    console.log(`API server now on port http://localhost:${port}`);
 });
