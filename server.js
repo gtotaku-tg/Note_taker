@@ -14,11 +14,7 @@ app.use(express.urlencoded({ extended: true }));
 app.use(apiRoutes);
 app.use(htmlRoutes);
   
-// Wildcard route to direct users to a homepage
-app.get('*', (req, res) =>
-  res.sendFile(path.join(__dirname, 'public/index.html'))
-);
 
 app.listen(PORT, () => {
-    console.log(`API listening at http://localhost:${PORT}!`);
+    console.log(`API server now on port http://localhost:${PORT}`);
 });
