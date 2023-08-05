@@ -11,8 +11,8 @@ app.use(express.static('./public'));
 app.use(express.urlencoded({ extended: true }));
 
 // Use Routes
-app.use("/api", apiRoutes);
-app.use("/",htmlRoutes);
+app.use(apiRoutes);
+app.use(htmlRoutes);
   
 // Wildcard route to direct users to a homepage
 app.get('*', (req, res) =>
